@@ -1,8 +1,10 @@
-# This repo contains the backend functions to programmatically interact with Supabase DB
+# BallbasketDB Backend
 
-# How this works
 
-# Edge functions
+
+## How this works
+
+### Edge functions
 
 [https://supabase.com/docs/guides/functions/quickstart](https://supabase.com/docs/guides/functions/quickstart)
 
