@@ -6,8 +6,7 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
-const PUBLIC_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwYWZ4dmZmbHVwem91c21tY3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM3NDY1NDksImV4cCI6MTk5OTMyMjU0OX0.4AOe7FIXD51GL2LTp3FvAypbXAK28gJDhJZiriCrXr4'
-const supabase = createClient('https://vpafxvfflupzousmmcqz.supabase.co', PUBLIC_ANON_KEY)
+const supabase = createClient(Deno.env.get('SUPABASE_URL'), Deno.env.get('SUPABASE_ANON_KEY'))
 
 
 
